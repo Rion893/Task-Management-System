@@ -1,0 +1,387 @@
+/* style.css */
+.guest {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+}
+
+/* Header */
+.guest-header {
+  background-color: #5d12d2;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  width: 120%;
+  display: inline-block;
+}
+
+.guest .guest-sign-in {
+  height: 60px;
+  left: 1231px;
+  position: absolute;
+  top: 12px;
+  width: 182px;
+}
+
+.guest-btn {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  border: 0;
+  box-shadow: -5px 4px 4px #00000040;
+  height: 50px;
+  position: relative;
+  width: 180px;
+}
+
+.guest-InSign {
+  color: #5d12d2;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 65px;
+  position: absolute;
+  top: 13px;
+  white-space: nowrap;
+  width: 97px;
+}
+
+.guest-Userimg {
+  height: 45px;
+  left: 16px;
+  position: absolute;
+  top: 5px;
+  width: 45px;
+}
+
+.guest-logo {
+  height: 50px;
+  left: 612px;
+  position: absolute;
+  top: 21px;
+  width: 215px;
+  align-content: center;
+}
+
+/* Task Part */
+.guest-TASKS {
+  width: 900px;
+  padding: 50px;
+  margin-top: 100px;
+  background-color: aliceblue;
+}
+
+/* AboutFunTaskIt */
+.guest-aboutContainer {
+  background-color: #8b2cf5;
+  height: fit-content;
+  width: 600px;
+  display: inline-block;
+  padding: 20px;
+  left: 100px;
+}
+
+/* TopContainerAbout */
+.guest-AboutTopContainer {
+  display: block;
+  color: #ffe5e5;
+  font-family: "Source Code Pro", Helvetica;
+  font-weight: 700;
+  padding: 50px;
+  height: fit-content;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+.guest-Intro {
+  display: block;
+  font-size: 30px;
+  left: 80px;
+  letter-spacing: 0;
+  margin-top: 60px;
+  margin-right: 100px;
+}
+
+.guest-info {
+  display: block;
+  font-size: 15px;
+  width: 380px;
+  letter-spacing: 0;
+  margin-top: 20px;
+  line-height: 25px;
+  text-align: justify;
+  margin-right: 20px;
+}
+
+/* BotContainerAbout */
+.guest-AboutBotContainer {
+  display: block;
+  font-weight: 700px;
+  padding: 50px;
+}
+
+.guest-titlePremium {
+  font-size: 30px;
+  height: 38px;
+  left: 80px;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  margin-right: 80px;
+}
+
+.guest-UpgradePremium ul {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: justify;
+  width: 400px;
+}
+
+/* Create Account btn */
+.guest-Createbtn {
+  align-items: center;
+  background-color: #ff6ac2;
+  display: flex;
+  border-radius: 16px;
+  border: 0;
+  box-shadow: -5px 4px 4px #00000040;
+  padding: 0px;
+  position: relative;
+  width: 250px;
+  margin-top: 30px;
+}
+
+.guest-btnTxtPink {
+  color: #ffe5e5;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 17px;
+  font-weight: 700;
+  width: 180px;
+  display: inline-block;
+}
+
+.guest-userImg {
+  display: inline-block;
+  width: 45px; /* Set your desired width */
+  height: 45px;
+}
+
+.guest-male-user {
+  width: 45px;
+}
+
+/* Left Container */
+.guest-TASKS {
+  width: 900px;
+  padding: 50px;
+  margin-top: 100px;
+  background-color: aliceblue;
+}
+
+
+.ListContainer{
+  padding-bottom: 10px;
+  font-family: "Source Code Pro", Helvetica;
+  color: #5d12d2;
+  
+  
+}
+
+.taskTitle{
+  display: inline-block;
+  width: 85%;
+}
+.ListContainer h2{
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: -4px 3px 2px #1e014c14;
+  display: inline-block;
+}
+  
+
+.ListContainer p{
+  font-size: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  text-shadow: -4px 3px 2px #1e014c14;
+}
+
+.taskList
+{
+  background-color: #ffe5e5;
+  box-shadow: -5px 4px 0px #FF6AC2;
+  height: fit-content;
+  width: 800px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+
+
+/*Buttons*/
+.AddTask button {
+  font-family: "Source Code Pro", Helvetica;
+  align-items: center;
+  background-color: #FF6AC2;
+  display: flex;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px; /* Fix the padding value to your desired value */
+  position: relative;
+  height: 20px;
+  width: fit-content;
+  color: #f9f9f9;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btnTxtPink p {
+  margin: -20; /* Remove default margin to position text properly */
+}
+
+
+
+.EditTask {
+  display: inline-block;
+  padding: 0;
+  
+}
+
+.ListContainer img{
+  margin-right: 5px;
+}
+
+
+/*Buttons for Editing*/
+.noChange, .editingButtons {
+  font-family: "Source Code Pro", Helvetica;
+  align-items: center;
+  background-color: #FF6AC2;
+  display: inline-block;
+  border-radius: 10px;
+  border: 0;
+  height: 30px;
+  width: fit-content;
+  color: #f9f9f9;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+
+.editingButtonsContainer button {
+  display: inline-block;
+}
+
+
+
+/*Task Create Btn*/
+
+.guest input{
+  font-family: "Source Code Pro", Helvetica; 
+  color: #FF6AC2;
+  font-weight: bold;
+  outline: 0;
+}
+
+.guest ::placeholder {
+  color: #5c12d25a;
+  opacity: 1;
+}
+
+
+.AddTask{
+  font-family: "Source Code Pro", Helvetica;
+  box-shadow: -5px 2px 2px #FF6AC2;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  background: #f9f9f9;
+  color: #5d12d2;
+  height: 40px;
+  margin: 20px;
+  
+}
+
+.AddTask input {
+ flex:1;
+ border: none;
+ background: transparent;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+
+.AddTask button{
+  font-family: "Source Code Pro", Helvetica;
+  font-weight: 550;
+  color: #f9f9f9;
+  font-size: 18px;
+  width: 13%;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #FF6AC2;
+  cursor: pointer;
+}
+
+/*ul li*/
+.taskList ul li{
+  font-family: "Source Code Pro", Helvetica;
+  font-weight: bold;
+  list-style: none;
+  font-size: 20px;
+  padding: 25px 8px 10px 80px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin-right: 30px;
+ 
+}
+
+
+.taskList ul li::before{
+  content: '';
+  position: absolute;
+  height:28px;
+  width: 35px;
+  border-radius: 50%;
+  background-image: url(/dist/img/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  left: 40px;
+  top: 20px;
+}
+
+.taskList ul li.checked{
+  color:#5d12d2;
+  text-decoration: line-through;
+
+}
+.taskList ul li.checked::before{
+  background-image: url(/dist/img/checked.png);
+
+}
+
+
+
+
+.editing input {
+  background-color: #f9f9f9;
+  box-shadow: -1px 1px 3px #FF6AC2;
+  border-radius: 5px;
+  font-family: "Source Code Pro", Helvetica;
+  font-weight: bold;
+  color:#FF6AC2;
+  border: 0;
+  cursor: pointer;
+  font-size: 15px;
+  padding:10px;
+  margin-bottom: 10px;
+  outline: 0;
+}

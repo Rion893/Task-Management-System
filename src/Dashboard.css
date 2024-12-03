@@ -1,0 +1,980 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,700,600|Sora:600");
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  /*          START OF MAIN HTML          */
+  
+  /* Start of Side Bar Menu*/ 
+  .box-sidebar-userSection {
+    position: fixed;
+    width: 250px;
+    height: 35%;
+    background-color: #FFE5E5;
+  }
+  
+  .account-facade {
+    top: 8%;
+    left: 8px;
+    position: relative;
+    width: 232px;
+    height: 85px;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: -5px 4px 4px #00000040;
+  }
+  
+  .account-facade .username {
+    position: absolute;
+    width: 111px;
+    height: 19px;
+    top: 25px;
+    left: 78px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .account-facade .user-fullName {
+    position: absolute;
+    width: 111px;
+    height: 19px;
+    top: 48px;
+    left: 78px;
+    font-family: "Source Code Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #5d12d2;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .account-facade .user-icon {
+    position: absolute;
+    width: 57px;
+    height: 63px;
+    top: 12px;
+    left: 11px;
+  }
+  
+  .user-section-menu {
+    position: absolute;
+    top: 130%;
+    width: 121px;
+    height: 142px;
+  }
+  
+  .user-section-menu .updates-wrapper {
+    position: relative;
+    width: 230px;
+    padding: 10px 0;
+    height: 40px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .user-section-menu .updates-wrapper:hover{
+    animation-delay: 2s;
+    cursor: pointer;
+    background: #5d12d2;
+    color: white;
+  }
+  
+  .user-section-menu .progress-wrapper {
+    position: absolute;
+    width: 230px;
+    padding: 10px 0;
+    height: 40px;
+    top: 30%;
+    left: 0;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .user-section-menu .progress-wrapper:hover{
+    animation-delay: 2s;
+    cursor: pointer;
+    background: #5d12d2;
+    color: white;
+  }
+  
+  .user-section-menu .account-wrapper {
+    position: absolute;
+    width: 230px;
+    padding: 10px 0;
+    height: 40px;
+    top: 60%;
+    left: 0;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .user-section-menu .account-wrapper:hover{
+    animation-delay: 2s;
+    cursor: pointer;
+    background: #5d12d2;
+    color: white;
+  }
+  
+  .user-section-menu .settings-wrapper {
+    position: absolute;
+    width: 230px;
+    padding: 10px 0;
+    height: 40px;
+    top: 90%;
+    left: 1px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .user-section-menu .settings-wrapper:hover{
+    animation-delay: 2s;
+    cursor: pointer;
+    background: #5d12d2;
+    color: white;
+  }
+  
+  .box-sidebar-projectSection {
+    position: fixed;
+    width: 250px;
+    height: 35%;
+    top: 35.5%;
+    background-color: #FFE5E5;
+  }
+  
+  .personal-section {
+    top: 2%;
+    left: 2%;
+    position: relative;
+    width: 192px;
+    height: 122px;
+  }
+  
+  .personal-section .title-wrapper {
+    position: absolute;
+    width: 120px;
+    height: 21px;
+    top: -1px;
+    left: 0;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .personal-section .personal-project-name {
+    position: relative;
+    width: 230px;
+    padding: 10px 0;
+    height: 40px;
+    top: 10px;
+    left: -30px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-bottom: 15px;
+  }
+  
+  .personal-section .personal-project-name:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #5d12d2;
+  }
+  
+  .personal-section .new-proj {
+    position: absolute;
+    width: 174px;
+    height: 28px;
+    top: 38px;
+    left: 30px;
+  }
+  
+  .personal-section .overlap-group {
+    position: relative;
+    width: 172px;
+    height: 28px;
+  }
+  
+  .personal-section .newProject-wrapper {
+    position: absolute;
+    width: 134px;
+    height: 20px;
+    top: 3px;
+    left: 38px;
+    font-family: "Source Code Pro-Medium", Helvetica;
+    font-weight: 500;
+    color: #5d12d2;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .personal-section .newProject-wrapper:hover {
+    cursor: pointer;
+  }
+  
+  .personal-section .add {
+    position: absolute;
+    width: 41px;
+    height: 28px;
+    top: 0;
+    left: 0;
+  }
+  
+  .personal-section .sort-down {
+    position: absolute;
+    width: 34px;
+    height: 50px;
+    top: 72px;
+    left: 35px;
+  }
+  
+  .box-sidebar-collabSection {
+    position: fixed;
+    width: 250px;
+    height: 29%;
+    top: 71%;
+    background-color: #FFE5E5;
+  }
+  
+  .collab-section {
+    position: relative;
+    width: 187px;
+    height: 64px;
+    top: 3%;
+    left: 3%;
+  }
+  
+  
+  .collab-section .title-wrapper {
+    position: absolute;
+    width: 120px;
+    height: 21px;
+    top: -1px;
+    left: 0;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .collab-section .group {
+    position: absolute;
+    width: 174px;
+    height: 28px;
+    top: 36px;
+    left: 30px;
+  }
+  
+  .collab-section .overlap-group {
+    position: relative;
+    width: 172px;
+    height: 28px;
+  }
+  
+  .collab-section .newCollab-wrapper {
+    position: absolute;
+    width: 134px;
+    height: 20px;
+    top: 3px;
+    left: 38px;
+    font-family: "Source Code Pro-Medium", Helvetica;
+    font-weight: 500;
+    color: #5d12d2;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .collab-section .newCollab-wrapper:hover {
+    cursor: pointer;
+  }
+  
+  .collab-section .collab-project-name {
+    position: relative;
+    width: 230px;
+    padding: 10px 0;
+    height: 40px;
+    top: 10px;
+    left: -30px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-bottom: 15px;
+  }
+  
+  .collab-section .add {
+    position: absolute;
+    width: 41px;
+    height: 28px;
+    top: 0;
+    left: 0;
+  }
+  
+  .collab-section .collab-project-name:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #5d12d2;
+  }
+  
+  .feedback-wrapper {
+    position: relative;
+    width: 120px;
+    height: 21px;
+    top: 66%;
+    left: 22%;
+    font-family: "Source Code Pro-Medium", Helvetica;
+    font-weight: 500;
+    color: #5d12d2;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  /* End of Side Bar Menu*/ 
+  
+  
+  /* Start of Progress Bar Section*/
+  .progress-bar-holder {
+    position: relative;
+    width: 83%;
+    height: 84px;
+    top: 3%;
+    left: 280px;
+    background-color: #5d12d2;
+  }
+  
+  
+  .label-projectname {
+    position: relative;
+    top: 6%; 
+    left: 1%;
+    width: 30%;
+    font-family: "Source Code Pro-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe5e5;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  
+  .progressbar {
+    position: relative;
+    width: 65%;
+    height: 42px;
+    top: -60%;
+    left: 30%;
+    background-color: white;
+  }
+  /* End of Progress Bar Section*/
+  
+  
+  /* Start of the Main Feature */
+  /* Start of the Main Feature [Buttons]*/
+  .add-new-task-button {
+    position: relative; 
+    width: 229px;
+    height: 44px;
+    top: 5%;
+    left: 15%;
+  }
+  
+  .add-new-task-button .button-add-new-task {
+    position: relative;
+    width: 229px;
+    height: 44px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    background-color: #FF6AC2;
+    color: #ffffff;
+    border-radius: 11px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-new-task-button  .add-new-picture {
+    position: absolute;
+    width: 31px;
+    height: 30px;
+    top: 8px;
+    left: 12px;
+    z-index: 2;
+  }
+  
+  
+  .edit-button {
+    position: relative; 
+    width: 229px;
+    height: 44px;
+    top: 13%;
+    left: 66%;
+  }
+  
+  .edit-button .button-edit {
+    position: relative;
+    width: 229px;
+    height: 44px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    background-color: #FF6AC2;
+    color: #ffffff;
+    border-radius: 11px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-button  .edit-picture {
+    position: absolute;
+    width: 23px;
+    height: 34px;
+    top: 5px;
+    left: 12px;
+    z-index: 2;
+  }
+  
+  
+  .show-all-button {
+    position: relative; 
+    width: 229px;
+    height: 44px;
+    top: 8.2%;
+    left: 80%;
+  }
+  
+  .show-all-button .button-show-all {
+    position: relative;
+    width: 229px;
+    height: 44px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    background-color: #FF6AC2;
+    color: #ffffff;
+    border-radius: 11px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .show-all-button  .show-all-picture {
+    position: absolute;
+    width: 23px;
+    height: 34px;
+    top: 5px;
+    left: 12px;
+    z-index: 2;
+  }
+  /* End of the Main Feature [Buttons]*/
+  .title {
+    position: absolute;
+    width: 120px;
+    height: 71px;
+    top: 28%;
+    left: 20%;
+  }
+  
+  .title .day-date {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Source Code Pro-Bold", Helvetica;
+    font-weight: 700;
+    color: #5d12d2;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .title .calendar-date {
+    position: absolute;
+    width: 120px;
+    height: 21px;
+    top: 49px;
+    left: 0;
+    font-family: "Source Code Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .todo-app{
+    position: relative;
+    width: 75%;
+    top: 15%;
+    left: 20%;
+    background-color: #ffe5e5;
+    border-radius: 54px;
+    box-shadow: -20px 20px 4px #f29d38;
+    padding: 40px 30px 70px;
+    min-height: 10vh;
+  }
+  
+  /*Duplicates Only*/
+  
+  .title2 {
+    position: relative;
+    width: 120px;
+    height: 71px;
+    top: 20%;
+    left: 20%;
+  }
+  
+  .title2 .day-date2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Source Code Pro-Bold", Helvetica;
+    font-weight: 700;
+    color: #5d12d2;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .title2 .calendar-date2 {
+    position: relative;
+    width: 120px;
+    height: 21px;
+    top: 0;
+    left: 0;
+    font-family: "Source Code Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  #div-container {
+    position: relative;
+    left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2em 0em;
+    top: 20%;
+  } 
+  
+  .todo-app2 {
+    width: 75%;
+    top: 40%;
+    left: 20%;
+    background-color: #ffe5e5;
+    border-radius: 54px;
+    box-shadow: -20px 20px 4px #B931FC;
+    padding: 40px 30px 70px;
+    min-height: 10vh;
+    margin-bottom: 5em;
+  }
+  
+  .task-creator-holder{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+  
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 30px;
+    padding-left: 20px;
+  }
+  
+  input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+  }
+  .button-addtask{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #FF6AC2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/square-90-1.png);
+    background-size: cover;
+    background-position: center;
+    top: 7.5px;
+    left: 8px;
+  }
+  ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url(img/SquareFull.png);
+  }
+  ul li span{
+    position: absolute;
+    right: inherit;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;  
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  ul li button{
+    position: absolute;
+    right: inherit;
+    right: 5%;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    font-size: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffe5e5;
+  }
+  ul li span:hover{
+    background: #edeef0;
+  }
+  ul li button:hover{
+    background: #edeef0;
+    cursor: pointer;
+  }
+  
+  /*          END OF MAIN HTML          */
+  
+  
+  /*          START OF REPORT HTML          */
+  
+  /* Start of Button Features */
+  .edit-button-report {
+    position: relative; 
+    width: 229px;
+    height: 44px;
+    top: 5.7%;
+    left: 66%;
+  }
+  
+  .edit-button-report .button-edit {
+    position: relative;
+    width: 229px;
+    height: 44px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    background-color: #FF6AC2;
+    color: #ffffff;
+    border-radius: 11px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-button-report  .edit-picture {
+    position: absolute;
+    width: 23px;
+    height: 34px;
+    top: 5px;
+    left: 12px;
+    z-index: 2;
+  }
+  
+  .go-back-button-report {
+    position: relative; 
+    width: 229px;
+    height: 44px;
+    top: 1%;
+    left: 80%;
+  }
+  
+  .go-back-button-report .button-show-all {
+    position: relative;
+    width: 229px;
+    height: 44px;
+    font-family: "Source Code Pro-SemiBold", Helvetica;
+    font-weight: 600;
+    background-color: #FF6AC2;
+    color: #ffffff;
+    border-radius: 11px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .go-back-button-report  .go-back-picture {
+    position: absolute;
+    width: 40px;
+    height: 34px;
+    top: 5px;
+    left: 12px;
+    z-index: 2;
+  }
+  /* End of Button Features */
+  
+  .report-holder {
+    position: relative;
+    width: 80%;
+    top: 3%;
+    left: 18%;
+    background-color: #ffe5e5;
+    border-radius: 54px;
+    box-shadow: -20px 20px 4px #ff6ac2;
+    padding: 40px 30px 70px;
+    height: 100%;
+  }
+  
+  
+  .previous-holder{
+    position: relative;
+    top: 5%;
+    left: 3%; 
+  }
+  
+  .previous-frame {
+    position: relative;
+    width: 192px;
+    height: 71px;
+  }
+  
+  .previous-frame .text-wrapper {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Source Code Pro-Bold", Helvetica;
+    font-weight: 700;
+    color: #5d12d2;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .previous-frame .div {
+    position: absolute;
+    width: 120px;
+    height: 21px;
+    top: 49px;
+    left: 0;
+    font-family: "Source Code Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .previous-placeholder {
+    position: relative;
+    width: 491px;
+    margin-bottom: 100px;
+  }
+  
+  
+  .current-holder{
+    position: relative;
+    left: 3%; 
+  }
+  
+  .current-frame {
+    position: relative;
+    width: 192px;
+    height: 71px;
+  }
+  
+  .current-frame .text-wrapper {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Source Code Pro-Bold", Helvetica;
+    font-weight: 700;
+    color: #5d12d2;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .current-frame .div {
+    position: absolute;
+    width: 120px;
+    height: 21px;
+    top: 49px;
+    left: 0;
+    font-family: "Source Code Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #5d12d2;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .current-placeholder {
+    position: relative;
+    width: 491px;
+    margin-bottom: 100px;
+    }
+  
+  
+    .archive-holder{
+      position: relative;
+      left: 3%; 
+    }
+    
+    .archive-frame {
+      position: relative;
+      width: 192px;
+      height: 71px;
+    }
+    
+    .archive-frame .text-wrapper {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      font-family: "Source Code Pro-Bold", Helvetica;
+      font-weight: 700;
+      color: #5d12d2;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .archive-frame .div {
+      position: absolute;
+      width: 120px;
+      height: 21px;
+      top: 49px;
+      left: 0;
+      font-family: "Source Code Pro-Regular", Helvetica;
+      font-weight: 400;
+      color: #5d12d2;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
+    
+    .archive-placeholder {
+      position: relative;
+      width: 491px;
+      margin-bottom: 100px;
+      }
+  
+    .completed-tasks-list{
+      position: fixed;
+      right: -500%;
+    }

@@ -1,0 +1,178 @@
+.App {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #FF6AC2, #5D12D2);
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .containering {
+    position: relative;
+    flex-direction: column;
+  }
+
+  
+  
+  .login-form {
+    flex-direction: column;
+    background-color: white;
+    color: #27385B;
+    font-weight: bold;
+    text-align: left;
+    z-index: 2; /* Set z-index to 1 for the form container */
+    position: relative; /* Set the position to relative */
+    width: 472px; /* Set the desired width */
+    height: 350px; /* Set the desired height */
+    margin-left: -50px;
+    
+  }
+  .login-form input {
+    width: 96%; /* Set the desired width for the input fields */
+    height: 40px; /* Set the desired height for the input fields */
+    font-size: 16px; /* Set the desired font size for the input fields */
+    margin: 5px 0; /* Adjust the margin as needed */
+    padding: 20px 0rem 2rem 20px; /* Adjust the padding for the input fields */
+    border: 2px solid #000; /* Modify the border properties as needed */
+    border-radius: 10px; /* Adjust the border-radius as needed */
+  }
+  
+  .auth-form-containering {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: #27385B;
+    padding: 5rem;
+    border-radius: 100px;
+    margin: 0 auto; 
+    text-align: left;
+    width: 372px;
+    height: 460px;
+    z-index: 2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .7); /* Add shadow to the right and bottom edges */
+  }
+  
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    width: 100%;
+    margin-top: -10px;
+   
+  }
+  
+  
+  
+  @media screen and (min-width: 600px) {
+    .auth-form-containering {
+      padding: 5rem;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: 0.5rem;
+      
+    }
+  }
+  .loginlabel{
+    display: flex;
+    text-align: left;
+    padding: .25rem;
+    color: #27385B;
+    font-size: 24px;
+    margin-bottom: -5px;
+    font-weight: bold;
+    margin-left: -5px
+  }
+  .password-toggle {
+    cursor: pointer;
+  }
+  
+  input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 3px solid #000; 
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  button{
+    border: none;
+    background-color: #7439db;
+    padding: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+  }
+
+  .Title-label {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: -35px;
+}
+
+ 
+.login-form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 35px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* Add a shadow on all sides */
+  color:#BDBCC1;
+  
+}
+
+  .rememberme{
+    margin-right: -10px;
+    margin-top: 20px;
+    color: #27385B;
+    font-size: 14px;
+    margin-bottom: -5px;
+    margin-top: -19px;
+    margin-left: 15px;
+
+  }
+  
+  .link-forgotpassword {
+    background: none;
+    color: #27385B;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: -70px;
+    margin-left: 250px;
+  }
+  
+  
+  .link-btn{
+    background: none;
+    color: #27385B;
+    font-size: 17px; 
+    word-spacing: 5px; 
+    font-weight: normal; 
+  }
+
+  .guest {
+    background: none;
+    color: #27385B;
+    font-size: 17px;
+    word-spacing: 5px;
+    font-weight: normal;
+    margin-top: -30px;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: -50px;
+  }
+  

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Task-Management-System
+It is a website that lets you monitor your task that you add on and check if you are done, you will also be reminded through google calendar if you missed or the deadline is soon.  I also Implemented dashboard so you can see your progress and your incoming deadlines in real time.
+>>>>>>> cb9a28b35741e7916320bb458bb043c3726b3466
